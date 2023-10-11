@@ -17,7 +17,6 @@ export default function Home() {
      <span 
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        style={{ cursor: 'pointer' }}
      >
           Hover over this text to see the dynamic tooltip.
       </span>
