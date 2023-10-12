@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DynamicTooltip from '../components/DynamicTooltip';
 
 export default function Home() {
-  const [showTooltip, setShowTooltip] = useState(false);
+  /*const [showTooltip, setShowTooltip] = useState(false);
 
   const handleMouseOver = () => {
     setShowTooltip(true);
@@ -22,5 +22,15 @@ export default function Home() {
       </span>
       {showTooltip && <DynamicTooltip />}
     </div>
+  );*/
+
+const [showTooltip, setShowTooltip] = useState(false);
+​
+  return (
+    <div>
+     <span onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>Hover over this text to see the dynamic tooltip.</span>
+      {showTooltip && <DynamicTooltip />}
+    </div>
   );
+
 }
